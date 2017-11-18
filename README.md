@@ -46,7 +46,9 @@ En la recuperación de información, tf-idf o TFIDF, abreviatura de term frequen
 # 6. Comparación con HPC
 1. ![Gráfica BigData vs HPC](/Imagenes/grafica.png)
 # 6.Bibliografía:
-1. http://dataconomy.com/2015/04/implementing-the-five-most-popular-similarity-measures-in-python/
+1. https://spark.apache.org/docs/2.2.0/mllib-clustering.html
 2. https://es.wikipedia.org/wiki/K-means
-3. https://es.wikipedia.org/wiki/%C3%8Dndice_Jaccard
-4. https://goo.gl/LL4CgA
+3. https://spark.apache.org/docs/1.0.1/api/java/org/apache/spark/mllib/clustering/KMeans.html
+4. https://spark.apache.org/docs/2.2.0/mllib-feature-extraction.html
+5. https://spark.apache.org/docs/1.1.1/api/java/org/apache/spark/rdd/RDD.html
+6. https://spark.apache.org/docs/2.0.1/api/java/org/apache/spark/rdd/RDD.html
