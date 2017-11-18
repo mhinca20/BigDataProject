@@ -34,11 +34,17 @@ En la recuperación de información, tf-idf o TFIDF, abreviatura de term frequen
 #### KMeans:
 *K-means es un método de agrupamiento, que tiene como objetivo la partición de un conjunto de n observaciones en k grupos en el que cada observación pertenece al grupo cuyo valor medio es más cercano. Es un método utilizado en minería de datos. El código para el Kmeans se obtuvo de varios links y repositorios de dónde se trató de entender su funcionamiento y gracias a los cuáles se pudo realizar el KMeans que se encuentra en los programas realizados.*
 # 5. Análisis de solución:
-*Al correr los dos programas, cada uno con una cantidad de 100 documentos se observaron los siguientes aspectos*
-1. ![Comando HTOP corriendo el programa en serial](/imagenes/htopSerial.png)
-2. ![Tiempo de ejecución del programa en serial](/imagenes/serialTime.png)
-3. ![Comando HTOP corriendo el programa en paralelo](/imagenes/htopParallel.png)
-4. ![Tiempo de ejecución del programa en paralelo](/imagenes/parallelTime.png)
+*Pruebas con cantidades de datos diferentes corriendo en el DCA 192.168.10.75*
+1. ![6 archivos](/Imagenes/6archivos.png)
+2. ![12 archivos](/Imagenes/12archivos.png)
+3. ![24 archivos](/Imagenes/24archivos.png)
+4. ![80 archivos](/Imagenes/80archivos.png)
+5. ![89 archivos](/Imagenes/89archivos.png)
+6. ![126 archivos](/Imagenes/126archivos.png)
+7. ![150 archivos](/Imagenes/150archivos.png)
+8. ![461 archivos](/Imagenes/461archivos.png)
+# 6. Comparación con HPC
+1. ![Gráfica BigData vs HPC](/Imagenes/grafica.png)
 # 6.Bibliografía:
 1. http://dataconomy.com/2015/04/implementing-the-five-most-popular-similarity-measures-in-python/
 2. https://es.wikipedia.org/wiki/K-means
