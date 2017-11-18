@@ -3,7 +3,8 @@
 ### This is a project using Spark.
 
 #### ¿Cómo ejecutar los programas?
-*Si se quiere correr el programa se debe ejecutar el siguiente comando. $ spark-submit --master yarn --deploy-mode cluster proyecto4.py 
+*Si se quiere correr el programa se debe ejecutar el siguiente comando. 
+$ spark-submit  --master yarn --deploy-mode cluster  --executor-memory 2G  --num-executors 4 proyecto.py <parametros_del_proyecto4.py>
 
 # 1. Realizado por:
 1. Mateo Hincapié Zapata - mhinca20@eafit.edu.co
@@ -13,9 +14,14 @@
 
 # 2. Introducción:
 *En éste repositorio se encuentra un programa que realiza el agrupamiento de archivos por medio del algoritmo de KMeans.
-El dataset que se está utilizando es una modificación de Gutenberg en español. Que se encuentra en el Ambari de la materias Tópicos Especiales de Telemática. Éste dataset contiene 461 archivos.
+El dataset que se está utilizando es una modificación de Gutenberg en español, la cual se encuentra en hdfs en un site de la materias Tópicos Especiales de Telemática. Éste dataset contiene 461 archivos.
 # 3. Palabras clave:
-*Una de las palabras clave es la lista 'stopwords' que contiene una serie de palabras que deben ser eliminadas de cada documento leído ya que pueden ser redundantes y sin importancia por ser tan comunes en un texto.*
+* Dataset: Conjunto de datos que reside en memoria.
+* KMeans
+* Text Mining
+* Data Mining
+*Hashing TF
+* TFIDF
 # 4. Análisis y Diseño de algoritmos:
 *Para empezar el programa se hicieron varias lecturas y se vieron algunos vídeos sobre Spark, además se buscaron varios ejemplos de cómo se debía utilizar KMeans y allí encontramos que debíamos utilizar otras bibliotecas como HashingTF e IDF.
 #### HashingTF: 
