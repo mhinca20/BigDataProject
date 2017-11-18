@@ -4,11 +4,10 @@ from pyspark.mllib.clustering import KMeans
 import sys
 
 if __name__ == '__main__':
-    dir = sys.argv[1]
-    k=2
+    k=4
     iter = 10
     sc = SparkContext(appName="Proyecto4Spark")
-    files = sc.wholeTextFiles("hdfs:///datasets/gutenberg-txt-es/19*.txt")
+    files = sc.wholeTextFiles("hdfs:///datasets/gutenberg-txt-es/*.txt")
     namesF = files.keys().collect()
     dicDocuments = files.values().map(lambda document: document.split(" "))
     hashingTF = HashingTF()
@@ -23,8 +22,6 @@ if __name__ == '__main__':
             groups[clusters[i]].append(namesF[i])
         else:
             groups[clusters[i]]=[namesF[i]]
-
-    for i in groups:
-        print ("Cluster "+str(i)+" ",groups[i])
-    hola = sc.parallelize(groups.items())
-    hola.saveAsTextFile("hdfs:///user/msierr37/proyecto4.1")
+    
+    fileS = sc.parallelize(groups.items())
+    fileS.saveAsTextFile("hdfs:///user/msierr37/proyecto4")
