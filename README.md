@@ -5,7 +5,7 @@
 #### ¿Cómo ejecutar los programas?
 *Si se quiere correr el programa se debe ejecutar el siguiente comando.
 
-$ spark-submit  --master yarn --deploy-mode cluster  --executor-memory 2G  --num-executors 4 proyecto.py <parametros_del_proyecto4.py>
+$ spark-submit  --master yarn --deploy-mode cluster  --executor-memory 2G  --num-executors 4 proyecto4.py 
 
 # 1. Realizado por:
 1. Mateo Hincapié Zapata - mhinca20@eafit.edu.co
@@ -21,15 +21,15 @@ El dataset que se está utilizando es una modificación de Gutenberg en español
 * KMeans
 * Text Mining
 * Data Mining
-*Hashing TF
+* Hashing TF
 * TFIDF
 # 4. Análisis y Diseño de algoritmos:
-*Para empezar el programa se hicieron varias lecturas y se vieron algunos vídeos sobre Spark, además se buscaron varios ejemplos de cómo se debía utilizar KMeans y allí encontramos que debíamos utilizar otras bibliotecas como HashingTF e IDF.
+*Para empezar el programa se hicieron varias lecturas y se vieron algunos vídeos sobre Spark, además se buscaron varios ejemplos de cómo se debía utilizar KMeans y allí encontramos que debíamos utilizar otras bibliotecas como HashingTF e IDF.*
 #### HashingTF: 
-En machine learning, la característica hashing, también conocida como el truco hash [1] (por analogía con el truco del kernel), es una forma rápida y eficiente de vectorizar características, es decir, convertir características arbitrarias en índices en un vector o matriz. Funciona aplicando una función hash a las características y utilizando sus valores hash como índices directamente, en lugar de buscar los índices en una matriz asociativa.
+*En machine learning, la característica hashing, también conocida como el truco hash [1] (por analogía con el truco del kernel), es una forma rápida y eficiente de vectorizar características, es decir, convertir características arbitrarias en índices en un vector o matriz. Funciona aplicando una función hash a las características y utilizando sus valores hash como índices directamente, en lugar de buscar los índices en una matriz asociativa.*
 
 #### TFIDF: 
-En la recuperación de información, tf-idf o TFIDF, abreviatura de term frequency–inverse document frequency, es una estadística numérica que pretende reflejar qué tan importante es una palabra para un documento en una colección o corpus. [1] A menudo se utiliza como un factor de ponderación en las búsquedas de recuperación de información, extracción de texto y modelado de usuarios. El valor de tf-idf aumenta proporcionalmente al número de veces que aparece una palabra en el documento, pero a menudo se compensa con la frecuencia de la palabra en el corpus, lo que ayuda a ajustar el hecho de que algunas palabras aparecen con más frecuencia en general. Hoy en día, tf-idf es uno de los esquemas de ponderación de términos más populares; El 83% de los sistemas de recomendación basados ​​en texto en el dominio de las bibliotecas digitales usan tf-idf.
+*En la recuperación de información, tf-idf o TFIDF, abreviatura de term frequency–inverse document frequency, es una estadística numérica que pretende reflejar qué tan importante es una palabra para un documento en una colección o corpus. [1] A menudo se utiliza como un factor de ponderación en las búsquedas de recuperación de información, extracción de texto y modelado de usuarios. El valor de tf-idf aumenta proporcionalmente al número de veces que aparece una palabra en el documento, pero a menudo se compensa con la frecuencia de la palabra en el corpus, lo que ayuda a ajustar el hecho de que algunas palabras aparecen con más frecuencia en general. Hoy en día, tf-idf es uno de los esquemas de ponderación de términos más populares; El 83% de los sistemas de recomendación basados en texto en el dominio de las bibliotecas digitales usan tf-idf.*
 
 #### KMeans:
 *K-means es un método de agrupamiento, que tiene como objetivo la partición de un conjunto de n observaciones en k grupos en el que cada observación pertenece al grupo cuyo valor medio es más cercano. Es un método utilizado en minería de datos. El código para el Kmeans se obtuvo de varios links y repositorios de dónde se trató de entender su funcionamiento y gracias a los cuáles se pudo realizar el KMeans que se encuentra en los programas realizados.*

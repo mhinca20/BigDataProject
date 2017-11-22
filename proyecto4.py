@@ -38,3 +38,5 @@ if __name__ == '__main__':
     #Se convierte el diccionario con la respuesta a RDD para poderlo guardar como un archivo en HDFS
     fileS = sc.parallelize(groups.items())
     fileS.saveAsTextFile("hdfs:///user/msierr37/proyecto4")
+    #Aqui se cierra el SparkContext
+    sc.stop()
