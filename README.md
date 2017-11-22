@@ -7,6 +7,9 @@
 
 $ spark-submit  --master yarn --deploy-mode cluster  --executor-memory 2G  --num-executors 4 proyecto4.py 
 
+### ¿Cómo se obtienen los datasets?
+*Los datasets se obtienen de la carpeta gutenberg-txt-es que se encuentra en la carpeta datasets del Ambari que el grupo de Tópicos Especiales de Telématica usa.
+
 # 1. Realizado por:
 1. Mateo Hincapié Zapata - mhinca20@eafit.edu.co
 2. Daniel Restrepo Aristizabal - drestr84@eafit.edu.co
