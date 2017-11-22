@@ -6,7 +6,7 @@ import sys
 if __name__ == '__main__':
     #se inicializan el k y el numero de iteraciones para el k-means
     k=4
-    iter = 10
+    iter = 500
     #se inicia el contexo de spark
     sc = SparkContext(appName="Proyecto4Spark")
     #se leen los archvos en el formato clave valor, la clave es el nombre del documento y el valor todo su contenido
@@ -19,8 +19,8 @@ if __name__ == '__main__':
     hashingTF = HashingTF()
     #Se obtiene la frecuencia de palabras en cada documento
     tf = hashingTF.transform(dicDocuments)
-    #Se obtiene la importancia de cada palabra en los documentos 
-    idf = IDF().fit(tf)
+    #Se obtiene la importancia de cada palabra en los documentos y se ignoran las palabras que estan en menos de 10 documentos
+    idf = IDF(minDocFreq = 10).fit(tf)
     #se multiplica la frecuencia por la importancia de la palabra para obtener la matriz 
     tfidf = idf.transform(tf)
     #se obtiene el modelo de los cluster con la matriz tfidf
@@ -37,6 +37,6 @@ if __name__ == '__main__':
             groups[clusters[i]]=[namesF[i]]
     #Se convierte el diccionario con la respuesta a RDD para poderlo guardar como un archivo en HDFS
     fileS = sc.parallelize(groups.items())
-    fileS.saveAsTextFile("hdfs:///user/msierr37/proyecto4")
+    fileS.coalesce(1).saveAsTextFile("hdfs:///user/mhinca20/proyecto4")
     #Aqui se cierra el SparkContext
     sc.stop()
