@@ -2,7 +2,7 @@
 
 ### This is a project using Spark.
 
-#### ¿Cómo ejecutar los programas?
+### ¿Cómo ejecutar los programas?
 *Si se quiere correr el programa se debe ejecutar el siguiente comando.
 
 $ spark-submit  --master yarn --deploy-mode cluster  --executor-memory 2G  --num-executors 4 proyecto4.py 
