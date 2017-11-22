@@ -1,6 +1,6 @@
 # BigDataProject
 
-### This is a project using Spark.
+### Este es un proyecto utilizando Spark.
 
 ### ¿Cómo ejecutar el programa?
 *Si se quiere correr el programa se debe ejecutar el siguiente comando.
@@ -8,7 +8,7 @@
 $ spark-submit  --master yarn --deploy-mode cluster  --executor-memory 2G  --num-executors 4 proyecto4.py 
 
 ### ¿Cómo se obtienen los datasets?
-*Los datasets se obtienen de la carpeta gutenberg-txt-es que se encuentra en la carpeta datasets del Ambari que el grupo de Tópicos Especiales de Telématica usa.
+*Los datasets se obtienen de la carpeta gutenberg-txt-es que se encuentra en la carpeta datasets del HDFS que está en el sitio Ambari que el grupo de Tópicos Especiales de Telématica utiliza.
 
 # 1. Realizado por:
 1. Mateo Hincapié Zapata - mhinca20@eafit.edu.co
